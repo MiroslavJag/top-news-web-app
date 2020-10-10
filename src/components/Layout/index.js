@@ -8,8 +8,8 @@ const LayoutWrapper = styled.div`
   height: 100vh;
   justify-content: center;
   display: flex;
-  background-color: antiquewhite;
   overflow: hidden;
+  background-color: lightgrey;
 `
 const LayoutContent = styled.div`
   width: 100%;
@@ -18,17 +18,21 @@ const LayoutContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 1024px) {
     margin: 60px;
     height: 90%;
   }
 `
 
 const Content = styled.div`
-  padding-top: 30px;
-  background-color: darkgrey;
+  padding: 30px;
+  background-color: white;
   height: 100%;
   overflow: overlay;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 30px 50px;
+  }
 `
 
 const Layout = (props) => {

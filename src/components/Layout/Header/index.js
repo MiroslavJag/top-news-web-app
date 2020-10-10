@@ -5,10 +5,11 @@ import NavigationItems from 'components/Navigation/NavigationItems'
 const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
-  background-color: lightgrey;
+  border-bottom: 1px solid lightgrey;
   position: relative;
   width: 100%;
   height: 60px;
+  background-color: white;
 `
 const LanguageSection = styled.div`
 
