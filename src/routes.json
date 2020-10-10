@@ -1,0 +1,14 @@
+{
+ "TOP_NEWS": {
+  "link" : "/",
+  "text": "Top News"
+ },
+  "CATEGORIES": {
+   "link": "/categories",
+   "text": "Categories"
+  },
+   "SEARCH": {
+    "link": "/search",
+    "text": "Search"
+   }
+}
