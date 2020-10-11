@@ -5,6 +5,7 @@ import ErrorView from 'components/Errors/ErrorView'
 import {reducePlaceDescLength} from '../../../helpers/string'
 import NoImage from 'static/images/no-image-thumbnail.jpg'
 import moment from 'moment'
+import {useTranslation} from 'react-i18next'
 
 const NewsList = styled.div`
   display: flex;
@@ -81,13 +82,14 @@ const NewsPublishedTime = styled.p`
 const Home = () => {
   const [data, setData] = useState(null)
   const [image, setImage] = useState()
+  const {t} = useTranslation()
 
   useEffect(() => {
     fetchTopNews()
   }, [])
 
   const fetchTopNews = async (route) => {
-    const newsData = await getTopNews('/top-headlines', 'us')
+    const newsData = await getTopNews('top-headlines', 'us')
     setData(newsData)
   }
 
@@ -98,12 +100,10 @@ const Home = () => {
           <NewsTitleWrapper>
             <NewsTitle>{el.title}</NewsTitle>
           </NewsTitleWrapper>
-          <NewsPublishedTime>
-            {moment(el.publishedAt).format('MMM DD | HH:mm')}
-          </NewsPublishedTime>
+          <NewsPublishedTime>{moment(el.publishedAt).format('MMM DD | HH:mm')}</NewsPublishedTime>
           <NewsImage src={el.urlToImage} onError={(e) => (e.target.src = NoImage)} />
           <NewsDesc>{el.description}</NewsDesc>
-          <NewsMoreLink>{'Read More'}</NewsMoreLink>
+          <NewsMoreLink>{t('READ_MORE')}</NewsMoreLink>
         </NewsRow>
       )
     })

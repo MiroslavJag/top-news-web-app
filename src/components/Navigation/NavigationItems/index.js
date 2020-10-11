@@ -6,6 +6,7 @@ import {TOP_NEWS, CATEGORIES, SEARCH} from 'routes.json'
 const NavigationList = styled.ul`
   list-style-type: none;
   display: flex;
+  flex: 1;
   flex-direction: row;
   padding: 0;
   margin: 0;

@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import ReactDOM from 'react-dom'
 import 'static/css/index.css'
 import App from 'pages/App'
 import * as serviceWorker from '../serviceWorker'
 import {BrowserRouter} from 'react-router-dom'
 import ErrorBoundary from 'components/Errors/ErrorBoundary'
+import '../i18n'
 
 const app = (
   <BrowserRouter>
     <ErrorBoundary>
-      <App />
+      <Suspense fallback={null}>
+        <App />
+      </Suspense>
     </ErrorBoundary>
   </BrowserRouter>
 )

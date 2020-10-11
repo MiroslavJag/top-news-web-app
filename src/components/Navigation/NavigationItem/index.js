@@ -10,7 +10,6 @@ const NavigationLink = styled(NavLink)`
   text-decoration: none;
   font-size: large;
   color: darkslategrey;
-  font-weight: 700;
 
   :hover {
     color: grey;
