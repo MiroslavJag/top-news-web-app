@@ -1,0 +1,800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsList /> match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.c2 {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  height: 68px;
+  margin-bottom: 5px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.c3 {
+  margin: 0;
+  height: 100%;
+}
+
+.c5 {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  object-position: top;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.c4 {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: grey;
+}
+
+.c6 {
+  margin: 0 0 10px 0;
+}
+
+.c7 {
+  margin: auto 0 0;
+  font-weight: bold;
+  color: grey;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c7:hover {
+  color: darkslategrey;
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    max-width: 300px;
+    margin: 0 20px 20px 0;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c1 {
+    max-width: 350px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        GOP Sen. Sasse unleashes scathing attack on Trump, 'TV-obsessed' narcissist - NBC News
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 14:17
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://media2.s-nbcnews.com/j/newscms/2020_42/3420689/201016-ben-sasse-al-0713_912a23665b3dd7c803cc29e8984ae06e.nbcnews-fp-1200-630.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Sen. Ben Sasse launched a blistering attack against President Donald Trump and his leadership this week, warning that there would be a “Republican bloodbath” if he loses the White House.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        iPhone 12 preorders are now live: Prices, release dates and how to buy Apple's 4 new phones - CNET
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 14:06
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://cnet2.cbsistatic.com/img/-0ruNt4_bEd-IUw-96k7OBBhzew=/57x0:854x491/1200x630/2020/10/13/32bd183a-d177-496a-8a3d-f2dfbb2b3c40/2020-10-13-13-00-57.jpg"
+    />
+    <p
+      className="c6"
+    >
+      You can now preorder two of the new iPhone 12 models, but you'll have to wait for the iPhone 12 Mini and Pro Max. Find out when, where and how to buy each model -- and for how much. Hint: It's not the same for every carrier.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Indianapolis Colts announce several positive COVID-19 tests - ESPN
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 13:12
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0520%2Fr700772_1296x729_16%2D9.jpg"
+    />
+    <p
+      className="c6"
+    >
+      The Indianapolis Colts closed their practice facility Friday after several members of their organization tested positive for COVID-19, the team said.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Pfizer board member Dr. Scott Gottlieb on company's vaccine timeline - CNBC Television
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 13:07
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="no-image-thumbnail.jpg"
+    />
+    <p
+      className="c6"
+    />
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Pfizer sees emergency use filing for Covid-19 vaccine after U.S. election - CNBC
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 12:29
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://image.cnbcfm.com/api/v1/image/106696364-1599690866992-vac.jpg?v=1602844093"
+    />
+    <p
+      className="c6"
+    >
+      Pfizer said on Friday it would apply for emergency use in the U.S. of its Covid-19 vaccine candidate as soon as a safety milestone is achieved in the third week of November.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Feinstein hugs and praises Lindsey Graham, sparking an outcry from liberals: ‘Time to retire’ - The Washington Post
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 12:14
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/10-16-2020/t_5be9ccc839a649909a846c0d03109e29_name_1___1920x1080___30p_00_00_51_15_Still014.jpg&w=1440"
+    />
+    <p
+      className="c6"
+    >
+      Feinstein said Amy Coney Barrett's Supreme Court confirmation hearing process had been “one of the best" she had participated in.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        First Call: Ex-Steeler wanted Le'Veon Bell back in Pittsburgh. Ravens mad at Bengals. Aaron Donald's surprising revelation. - TribLIVE
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 12:10
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://triblive.com/wp-content/uploads/2020/10/3130412_web1_leveon.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Friday’s “First Call” gives us an ex-Steeler who wishes Le’Veon Bell would’ve come back to Pittsburgh instead of going to Kansas City. Another AFC coach admits his team wanted Bell. Aaron Donald’s surprising quote about his huge game last week. And the Ravens…
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Dow Futures Turn Higher on Pfizer Vaccine Timeline; September Retail Sales Impress With 1.9% Gain - TheStreet
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 11:53
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://www.thestreet.com/.image/t_share/MTY4NjM5MTY1NzIyMDc2ODA3/us-markets-rally-likely-to-continue-beyond-tuesday---nyse-trader.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Wall Street is looking to snap a three-day losing streak Friday after Pfizer CEO Albert Bourla said the company "may know whether or not our (coronavirus) vaccine is effective by the end of October."
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Tony Awards: Alanis Morissette musical leads reduced nomination field - BBC News
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 11:07
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://ichef.bbci.co.uk/news/1024/branded_news/165A1/production/_114935519_jagged1_getty.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Broadway theatres have been shut since March, a fact reflected by this year's pared-down nominations.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Six Takeaways From Thursday’s Dueling Trump and Biden Town Halls - The New York Times
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 11:00
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://static01.nyt.com/images/2020/10/16/us/politics/16TOWNHALL-TAKEAWAYS/16TOWNHALL-TAKEAWAYS-facebookJumbo.jpg"
+    />
+    <p
+      className="c6"
+    >
+      After the cacophony of the first presidential debate, it turns out simultaneous events aren’t much of an improvement.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Protests in Thailand are a 'double whammy' for the economy, which is reeling from Covid-19 - CNBC
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 10:45
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://image.cnbcfm.com/api/v1/image/106744927-1602725826826-GettyImages-1229049221.jpg?v=1602725922"
+    />
+    <p
+      className="c6"
+    >
+      Recent protests in Thailand will be a "double whammy" for growth in the country, which has already suffered a blow from the Covid-19 pandemic, analysts say.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        City In China Tests 10 Million People After 13 COVID-19 Cases Are Found - NPR
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 10:23
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://media.npr.org/assets/img/2020/10/16/qingdao_wide-8ac5d69b5c26a5f467d5b5f590a61f59681351ea.jpg?s=1400"
+    />
+    <p
+      className="c6"
+    >
+      Qingdao city officials say no new infections were identified. The extraordinary testing effort followed the appearance of a small cluster of COVID-19 cases centered in a city hospital.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        A 14-year Chicago police veteran has filed a civil suit against former Superintendent Eddie Johnson - CNN
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 10:13
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://cdn.cnn.com/cnnnext/dam/assets/190725144419-chicago-police-eddie-johnson-super-tease.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Cynthia Donald, a 14-year veteran of the Chicago Police Department (CPD), has filed a civil lawsuit against former CPD Superintendent Eddie Johnson alleging that she was subjected to "unwanted and uninvited sexual advances, abuse, harassment, and a hostile wo…
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        T-Boz Gets Why Industry Bailed on TLC, Still Stewing Over L.A. Reid Feud - TMZ
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 10:00
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://imagez.tmz.com/image/05/16by9/2020/10/15/05cd6ce8e54645cf99d0787458b05622_xl.jpg"
+    />
+    <p
+      className="c6"
+    >
+      TLC's T-Boz clarifies some comments she made about L.A. Reid, Drake and other artists.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Remdesivir and interferon fall flat in WHO's megastudy of COVID-19 treatments - Science Magazine
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 09:45
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/india_1280p.jpg?itok=wqyMFEnh"
+    />
+    <p
+      className="c6"
+    >
+      Solidarity fails to find mortality benefits in four treatments—but the global trial itself wins praise
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        12 people died in a California nursing home Covid-19 outbreak. Other facilities across the US are reporting infections - CNN
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 09:24
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://cdn.cnn.com/cnnnext/dam/assets/201016013555-california-gilroy-nursing-home-super-tease.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Twelve residents at a northern California nursing home have died from Covid-19, the facility announced this week.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Disney updates content warning for racism in classic films - BBC News
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 08:54
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://ichef.bbci.co.uk/news/1024/branded_news/FB57/production/_114934346_gettyimages-1262797342.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Films such as Dumbo and Peter Pan now warn of "negative depictions... of people or cultures".
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        Will Jacinda Ardern Win a Second Term? New Zealand’s Election, Explained - The New York Times
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 07:36
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://static01.nyt.com/images/2020/10/16/world/16nz-explainer-1/16nz-explainer-1-facebookJumbo.jpg"
+    />
+    <p
+      className="c6"
+    >
+      Voters go to the polls on Saturday after a campaign that focused heavily on Ms. Ardern’s successful handling of the coronavirus outbreak.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        No Brexit trade deal could cost reeling UK economy $25 billion next year - CNN
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 07:19
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://cdn.cnn.com/cnnnext/dam/assets/201015124359-01-boris-johnson-brexit-file-super-tease.jpg"
+    />
+    <p
+      className="c6"
+    >
+      UK Prime Minister Boris Johnson has an expensive choice ahead.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3"
+      >
+        We Just Got More Evidence Your Blood Type May Change COVID-19 Risk And Severity - ScienceAlert
+      </h3>
+    </div>
+    <p
+      className="c4"
+    >
+      Oct 16 - 07:16
+    </p>
+    <img
+      className="c5"
+      onClick={[Function]}
+      onError={[Function]}
+      src="https://i.insider.com/5f88b873d260780019341b7c?width=1200&format=jpeg"
+    />
+    <p
+      className="c6"
+    >
+      Research is coalescing around the idea that one blood type — type O — is linked to a lower risk of coronavirus infection and less severe cases.
+    </p>
+    <p
+      className="c7"
+      onClick={[Function]}
+    >
+      READ_MORE
+    </p>
+  </div>
+</div>
+`;

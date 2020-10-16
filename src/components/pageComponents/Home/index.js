@@ -1,129 +1,146 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import * as actions from 'store/actions'
 import {getTopNews} from '../../../services/topNews'
 import ErrorView from 'components/Errors/ErrorView'
-import {reducePlaceDescLength} from '../../../helpers/string'
+import {reducePlaceDescLength} from '../../../helpers/strings'
 import NoImage from 'static/images/no-image-thumbnail.jpg'
 import moment from 'moment'
 import {useTranslation} from 'react-i18next'
+import SingleNews from 'components/common/SingleNews'
+import SkeletonLoader from 'components/common/SkeletonLoader'
+import NewsList from 'components/common/NewsList'
+import {LANG_CODES} from 'consts.json'
+import {API_ROUTES} from 'routes.json'
 
-const NewsList = styled.div`
+
+export const NewsListTitleWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  border-bottom: 1px solid lightgrey;
+  margin: 0 0 20px 0;
+`
+
+export const NewsListTitle = styled.h1`
+  margin: 0 0 10px 0;
+  text-align: left;
+`
+export const NewsListTitleLang = styled(NewsListTitle)`
+  text-transform: uppercase;
+`
+export const Separator = styled.div`
+  margin: 0px 15px 0;
+  height: 35px;
+  width: 1px;
+  background-color: lightgrey;
+`
+
+const NewsSectionWrapper = styled.div`
+  width: 100%;
   justify-content: center;
 `
 
-const NewsRow = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-  border-bottom: 1px solid lightgrey;
-  margin-bottom: 20px;
-  text-align: left;
-
-  @media only screen and (min-width: 768px) {
-    max-width: 300px;
-    margin: 0 20px 20px 0;
-  }
-  @media only screen and (min-width: 1024px) {
-    max-width: 350px;
-  }
-`
-
-const NewsTitleWrapper = styled.div`
-  overflow: hidden;
-  width: 100%;
-  display: -webkit-box;
-  height: 68px;
-  margin-bottom: 5px;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-`
-
-const NewsTitle = styled.h3`
-  margin: 0;
-  height: 100%;
-`
-
-const NewsImage = styled.img`
-  width: 100%;
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
-  cursor: pointer;
-`
-const NewsDesc = styled.p`
-  margin: 0 0 10px 0;
-`
-const NewsMoreLink = styled.p`
-  margin: auto 0 0;
-  font-weight: bold;
-  color: grey;
-  align-self: flex-end;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &:hover {
-    color: darkslategrey;
-  }
-`
-
-const NewsPublishedTime = styled.p`
+export const NewsPublishedTime = styled.p`
   margin: 0 0 10px 0;
   font-size: 13px;
   color: grey;
 `
 
-const Home = () => {
+const LoadingSkeltonWrapper = styled.div`
+  background-color: lightgrey;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(to right, transparent 0%, #e8e8e8 50%, transparent 100%);
+    animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes load {
+    from {
+      left: -150px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+`
+
+type Props = {
+  langCode: String,
+  setLanguageDisabled: Function,
+}
+
+const Home = ({langCode, setLanguageDisabled}): Props => {
   const [data, setData] = useState(null)
-  const [image, setImage] = useState()
+  const [singleNewsData, setSingleNewsData] = useState(null)
   const {t} = useTranslation()
 
   useEffect(() => {
     fetchTopNews()
-  }, [])
+  }, [langCode])
 
-  const fetchTopNews = async (route) => {
-    const newsData = await getTopNews('top-headlines', 'us')
+  useEffect(() => {
+    if (singleNewsData !== null) {
+      setLanguageDisabled(true)
+    }
+  }, [singleNewsData])
+
+  const fetchTopNews = async () => {
+    const newsData = await getTopNews(API_ROUTES.TOP_HEADLINES, langCode)
     setData(newsData)
   }
 
-  const news = () =>
-    data.articles.map((el, index) => {
-      return (
-        <NewsRow key={index}>
-          <NewsTitleWrapper>
-            <NewsTitle>{el.title}</NewsTitle>
-          </NewsTitleWrapper>
-          <NewsPublishedTime>{moment(el.publishedAt).format('MMM DD | HH:mm')}</NewsPublishedTime>
-          <NewsImage src={el.urlToImage} onError={(e) => (e.target.src = NoImage)} />
-          <NewsDesc>{el.description}</NewsDesc>
-          <NewsMoreLink>{t('READ_MORE')}</NewsMoreLink>
-        </NewsRow>
-      )
-    })
 
-  console.log(data)
-
-  const renderContent = () =>
+  const renderTopNewsContent = () =>
     data !== null ? (
       data.error ? (
         <ErrorView refreshCallback={fetchTopNews} />
       ) : (
-        <NewsList>{news()}</NewsList>
+        <>
+          <NewsListTitleWrapper>
+            <NewsListTitle>{t('TOP_NEWS_TITLE')}</NewsListTitle>
+            <Separator />
+            <NewsListTitleLang>{langCode}</NewsListTitleLang>
+          </NewsListTitleWrapper>
+          <NewsList data={data.articles} setSingleNewsData={setSingleNewsData} />
+        </>
       )
     ) : (
-      <>
-        <h1>Loading</h1>
-      </>
+      <SkeletonLoader langCode={langCode} />
     )
 
-  return <>{renderContent()}</>
+  return (
+    <>
+      {singleNewsData !== null ? (
+        <SingleNews singleNewsData={singleNewsData} setSingleNewsData={setSingleNewsData} />
+      ) : (
+        renderTopNewsContent()
+      )}
+    </>
+  )
+}
+const mapStateToProps = (state) => {
+  return {
+    langCode: state.langCode,
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setLanguageDisabled: (value) => dispatch(actions.setLanguageDisabled(value)),
+  }
 }
 
-export default Home
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

@@ -54,7 +54,10 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.3",
+    "react-multi-carousel": "^2.5.5",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
@@ -152,6 +155,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "jest-enzyme": "^7.1.2",
     "jest-styled-components": "^7.0.3",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "redux-mock-store": "^1.5.4"
   }
 }

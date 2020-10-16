@@ -2,7 +2,7 @@ import React from 'react'
 import {mount} from 'enzyme'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import Header from 'components/Layout/Header'
+import Categories from 'components/pageComponents/Categories'
 import {BrowserRouter} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import configureStore from 'redux-mock-store'
@@ -10,7 +10,7 @@ import {LANG_CODES} from 'consts.json'
 
 const mockStore = configureStore([])
 
-describe('<Header />', () => {
+describe('<Categories />', () => {
   let store
   let component
 
@@ -23,7 +23,7 @@ describe('<Header />', () => {
     component = (
       <Provider store={store}>
         <BrowserRouter>
-          <Header t={(k) => k} />
+          <Categories t={(k) => k} />
         </BrowserRouter>
       </Provider>
     )
@@ -35,7 +35,7 @@ describe('<Header />', () => {
   })
   it('should render correctly with all needed components', () => {
     const wrapper = mount(component)
-    expect(wrapper.find('NavigationItems__NavigationList')).toHaveLength(1)
-    expect(wrapper.find('Header__LanguageSection')).toHaveLength(1)
+    expect(wrapper.find('Categories__CategoryContent')).toHaveLength(1)
+    expect(wrapper.find('Slider__SliderWrapper')).toHaveLength(7)
   })
 })

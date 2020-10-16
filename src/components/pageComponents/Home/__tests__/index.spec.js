@@ -2,15 +2,16 @@ import React from 'react'
 import {mount} from 'enzyme'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import Header from 'components/Layout/Header'
+import Home from 'components/pageComponents/Home'
 import {BrowserRouter} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import configureStore from 'redux-mock-store'
 import {LANG_CODES} from 'consts.json'
+import {topNewsStub} from '../../../../test/stubs/news'
 
 const mockStore = configureStore([])
 
-describe('<Header />', () => {
+describe('<Home />', () => {
   let store
   let component
 
@@ -23,7 +24,7 @@ describe('<Header />', () => {
     component = (
       <Provider store={store}>
         <BrowserRouter>
-          <Header t={(k) => k} />
+          <Home data={topNewsStub.articles} t={(k) => k} />
         </BrowserRouter>
       </Provider>
     )
@@ -35,7 +36,7 @@ describe('<Header />', () => {
   })
   it('should render correctly with all needed components', () => {
     const wrapper = mount(component)
-    expect(wrapper.find('NavigationItems__NavigationList')).toHaveLength(1)
-    expect(wrapper.find('Header__LanguageSection')).toHaveLength(1)
+    expect(wrapper.find('Home__NewsListTitleWrapper')).toHaveLength(1)
+    expect(wrapper.find('NewsList__NewsListWrapper')).toHaveLength(1)
   })
 })

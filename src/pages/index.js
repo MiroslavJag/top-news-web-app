@@ -3,16 +3,23 @@ import ReactDOM from 'react-dom'
 import 'static/css/index.css'
 import App from 'pages/App'
 import * as serviceWorker from '../serviceWorker'
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
 import {BrowserRouter} from 'react-router-dom'
 import ErrorBoundary from 'components/Errors/ErrorBoundary'
+import reducer from 'store/reducers/reducer'
 import '../i18n'
+
+const store = createStore(reducer)
 
 const app = (
   <BrowserRouter>
     <ErrorBoundary>
-      <Suspense fallback={null}>
-        <App />
-      </Suspense>
+      <Provider store={store}>
+        <Suspense fallback={null}>
+          <App />
+        </Suspense>
+      </Provider>
     </ErrorBoundary>
   </BrowserRouter>
 )

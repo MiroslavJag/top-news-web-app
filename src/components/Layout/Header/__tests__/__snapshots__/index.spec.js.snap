@@ -67,29 +67,42 @@ exports[`<Header /> match snapshot 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  cursor: pointer;
-}
-
-.c4 p:nth-child(2) {
-  cursor: auto;
-}
-
-.c4 p:nth-child(2):hover {
-  color: darkslategrey;
-}
-
-.c4 p:nth-child(3) {
   margin-right: 20px;
 }
 
 .c5 {
   font-size: 14px;
-  margin: 0 5px;
-  color: darkslategrey;
+  padding: 0;
+  border: none;
+  background-color: white;
+  outline-color: white;
+  cursor: pointer;
+  color: darkcyan;
 }
 
 .c5:hover {
+  color: darkcyan;
+}
+
+.c7 {
+  font-size: 14px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  outline-color: white;
+  cursor: pointer;
+  color: darkslategrey;
+}
+
+.c7:hover {
   color: grey;
+}
+
+.c6 {
+  margin: 0 15px 0;
+  height: 20px;
+  width: 1px;
+  background-color: lightgrey;
 }
 
 <div
@@ -102,13 +115,12 @@ exports[`<Header /> match snapshot 1`] = `
       className="c2"
     >
       <a
-        aria-current="page"
-        className="c3 active"
-        href="/"
+        aria-current={null}
+        className="c3"
+        href="/gb"
         onClick={[Function]}
-        style={Object {}}
       >
-        Top News
+        top News
       </a>
     </li>
     <li
@@ -117,10 +129,10 @@ exports[`<Header /> match snapshot 1`] = `
       <a
         aria-current={null}
         className="c3"
-        href="/categories"
+        href="/gb/categories"
         onClick={[Function]}
       >
-        Categories
+        categories
       </a>
     </li>
     <li
@@ -129,33 +141,36 @@ exports[`<Header /> match snapshot 1`] = `
       <a
         aria-current={null}
         className="c3"
-        href="/search"
+        href="/gb/search"
         onClick={[Function]}
       >
-        Search
+        search
       </a>
     </li>
   </ul>
   <div
     className="c4"
   >
-    <p
+    <button
       className="c5"
+      disabled={false}
       onClick={[Function]}
+      value="gb"
     >
       GB
-    </p>
-    <p
-      className="c5"
-    >
-      |
-    </p>
-    <p
-      className="c5"
+    </button>
+    <div
+      className="c6"
+    />
+    <button
+      className="c7"
+      disabled={false}
+      id="langUS"
       onClick={[Function]}
+      value="us"
     >
       US
-    </p>
+    </button>
   </div>
 </div>
 `;

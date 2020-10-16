@@ -19,11 +19,15 @@ const NavigationLink = styled(NavLink)`
     color: darkcyan;
   }
 `
+type Props ={
+  link: String,
+  children: String
+}
 
-const NavigationItem = (props) => (
+const NavigationItem = ({link, children}): Props => (
   <LinkWrapper>
-    <NavigationLink to={props.link} exact>
-      {props.children}
+    <NavigationLink to={link} exact>
+      {children}
     </NavigationLink>
   </LinkWrapper>
 )

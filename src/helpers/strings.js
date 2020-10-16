@@ -1,3 +1,13 @@
+import moment from 'moment'
+
+/**
+ * Return formated date with 
+ *
+ * @param {Date} date which should be formated.
+ */
+export const formatDate = (date) => moment(date).format('MMM DD - HH:mm')
+
+
 /**
  * Return reduced place description length
  *

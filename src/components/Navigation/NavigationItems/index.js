@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import NavigationItem from 'components/Navigation/NavigationItem'
 import {TOP_NEWS, CATEGORIES, SEARCH} from 'routes.json'
 
@@ -12,14 +13,23 @@ const NavigationList = styled.ul`
   margin: 0;
 `
 
-const NavigationItems = () => (
+type Props = {
+  langCode: String
+}
+
+const NavigationItems = ({langCode}): Props => (
   <NavigationList>
-    <NavigationItem link={TOP_NEWS.link} exact>
+    <NavigationItem link={`/${langCode}`} exact>
       {TOP_NEWS.text}
     </NavigationItem>
-    <NavigationItem link={CATEGORIES.link}>{CATEGORIES.text}</NavigationItem>
-    <NavigationItem link={SEARCH.link}>{SEARCH.text}</NavigationItem>
+    <NavigationItem link={`/${langCode}${CATEGORIES.link}`}>{CATEGORIES.text}</NavigationItem>
+    <NavigationItem link={`/${langCode}${SEARCH.link}`}>{SEARCH.text}</NavigationItem>
   </NavigationList>
 )
+const mapStateToProps = (state) => {
+  return {
+    langCode: state.langCode,
+  }
+}
 
-export default NavigationItems
+export default connect(mapStateToProps, null)(NavigationItems)

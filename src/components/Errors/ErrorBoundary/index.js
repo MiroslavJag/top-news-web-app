@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import ErrorView from 'components/Errors/ErrorView'
 
 class ErrorBoundary extends React.Component {
@@ -10,7 +9,6 @@ class ErrorBoundary extends React.Component {
 
   static getDerivedStateFromError(error) {
     console.log(error)
-
     return {hasError: true}
   }
 
@@ -22,7 +20,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <ErrorView refreshCallback={refreshPage} />
+      return <ErrorView refreshCallback={this.refreshPage} />
     } else {
       return this.props.children
     }

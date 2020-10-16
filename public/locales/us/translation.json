@@ -1,3 +1,24 @@
 {
- "READ_MORE": "More"
+ "GB": "GB",
+ "US": "US",
+ "READ_MORE": "More",
+ "TOP_NEWS_TITLE": "Top News",
+ "CATEGORIES": "Categories",
+ "BUSINESS": "Business",
+ "ENTERTAINMENT": "Entertainment",
+ "GENERAL": "General",
+ "HEALTH": "Health",
+ "SCIENCE": "Science",
+ "SPORTS": "Sports",
+ "TECHNOLOGY": "Technology",
+ "ERRORS": {
+  "PAGE_NOT_EXIST_TITLE": "Oh No! This page doesn't exist",
+  "PAGE_NOT_EXIST_MESSAGE": "Please head a back to the Home page. ",
+  "ERROR_MESSAGE": "Something Went wrong!"
+ },
+ "GO_BACK": "Go Back",
+ "RETRY": "Retry",
+ "SEARCH": "Search",
+ "SEARCH_PLACEHOLDER_TEXT": "Search term...",
+ "BACK_TO_LIST": "Back to list"
 }

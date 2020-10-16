@@ -1,5 +1,19 @@
 {
  "ERRORS": {
   "API_ERROR": "API ERROR"
+ },
+ "LANG_CODES": {
+  "GB": "gb",
+  "US": "us"
+ },
+ "TOP_NEWS_LANG": "TopNewsLang",
+ "CATEGORY_NAME": {
+  "BUSINESS": "business",
+  "ENTERTAINMENT": "entertainment",
+  "GENERAL": "general",
+  "HEALTH": "health",
+  "SCIENCE": "science",
+  "SPORTS": "sports",
+  "TECHNOLOGY": "technology"
  }
 }

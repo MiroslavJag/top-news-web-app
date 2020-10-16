@@ -1,14 +1,17 @@
 {
+"API_ROUTES": {
+  "TOP_HEADLINES": "top-headlines"
+},
  "TOP_NEWS": {
   "link" : "/",
-  "text": "Top News"
+  "text": "top News"
  },
-  "CATEGORIES": {
+"CATEGORIES": {
    "link": "/categories",
-   "text": "Categories"
+   "text": "categories"
   },
-   "SEARCH": {
-    "link": "/search",
-    "text": "Search"
-   }
+"SEARCH": {
+   "link": "/search",
+   "text": "search"
+ }
 }

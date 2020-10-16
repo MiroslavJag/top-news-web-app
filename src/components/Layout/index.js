@@ -17,6 +17,7 @@ const LayoutContent = styled.div`
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+  color: darkslategrey;
 
   @media only screen and (min-width: 1024px) {
     margin: 60px;
@@ -25,13 +26,17 @@ const LayoutContent = styled.div`
 `
 
 const Content = styled.div`
-  padding: 30px;
+  padding: 15px;
   background-color: white;
   height: 100%;
   overflow: overlay;
 
+  @media only screen and (min-width: 768px) {
+    padding: 15px 25px
+  }
+
   @media only screen and (min-width: 1024px) {
-    padding: 30px 50px;
+    padding: 15px 50px;
   }
 `
 
